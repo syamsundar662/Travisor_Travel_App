@@ -11,7 +11,7 @@ import 'package:trivo/widgets/w_currentlocation.dart';
 import 'package:trivo/screens/screen_fulldetails.dart';
 import 'package:trivo/screens/screen_profile.dart';
 import 'package:trivo/screens/screen_searchpage.dart';
-import 'package:trivo/widgets/w_homecarousel1.dart';
+import 'package:trivo/widgets/w_home_carousel1.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -107,9 +107,6 @@ class _HomeScreenState extends State<HomeScreen> {
             color: Colors.white,
             child: Column(
               children: [
-                const SizedBox(
-                  height: 0,
-                ),
                 const LocationScreens(),
 
                 //main carousel slider---------start----------- (section 2)

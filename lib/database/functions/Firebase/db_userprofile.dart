@@ -49,8 +49,7 @@ class ProfileFirebase {
         'imageUrl': imageUrl,
       });
     } else if (imageUrl == null) {
-    } else {
-    }
+    } else {}
   }
 
   Future<void> getuserimage() async {
@@ -62,7 +61,6 @@ class ProfileFirebase {
       // Check if the document exists before accessing its data
       querySnapshotData = docSnapshot.data();
       imageURLdb = querySnapshotData!['imageUrl'] as String;
-    } else {
-    }
+    } else {}
   }
 }

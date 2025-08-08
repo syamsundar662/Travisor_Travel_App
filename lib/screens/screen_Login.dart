@@ -7,7 +7,7 @@ import 'package:trivo/favourites/favourites_models.dart';
 import 'package:trivo/helper/helper_size.dart';
 import 'package:trivo/screens/admin/screens/admin_homepage.dart';
 import 'package:trivo/screens/screen_signup.dart';
-import 'package:trivo/widgets/w_bottomnavbar.dart';
+import 'package:trivo/widgets/w_bottom_navbar.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -18,7 +18,6 @@ class LoginPage extends StatefulWidget {
 
 class LoginPageState extends State<LoginPage> {
   final _gmailcontroller = TextEditingController();
-
   final _passwordcontroller = TextEditingController();
 
   final _formkey = GlobalKey<FormState>();

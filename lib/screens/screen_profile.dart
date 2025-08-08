@@ -145,12 +145,13 @@ class _ProfileState extends State<Profile> {
         ),
       ),
       body: SingleChildScrollView(
+        physics: const NeverScrollableScrollPhysics(),
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(25.0),
             child: SizedBox( 
               height: screenHeight/1.2,
-              width: screenWidth,
+              width: screenWidth, 
               child: Column(
                 children: [
                   Column(
@@ -359,7 +360,7 @@ class _ProfileState extends State<Profile> {
                       ], 
                     ),
                   ),
-                  SizedBox(height: screenHeight/5,) ,
+                  const Spacer(), 
                   const Text('Version 1.0')
                 ],
               ),

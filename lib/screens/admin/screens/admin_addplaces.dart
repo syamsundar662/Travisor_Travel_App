@@ -10,7 +10,7 @@ import 'package:trivo/database/functions/Firebase/db_repository.dart';
 
 bool isListEmpty = true;
 bool load = false;
-
+ 
 class AddPlaces extends StatefulWidget {
   const AddPlaces({
     super.key,
@@ -43,6 +43,7 @@ class _AddPlacesState extends State<AddPlaces> {
   // String longitudetext = loncontroller.text;
   @override
   Widget build(BuildContext context) {
+    // ignore: deprecated_member_use
     return WillPopScope(
       onWillPop: () async {
         Repository().getalldatas();

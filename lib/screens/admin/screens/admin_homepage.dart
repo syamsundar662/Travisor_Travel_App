@@ -9,7 +9,7 @@ import 'package:trivo/screens/admin/screens/admin_addplaces.dart';
 import 'package:trivo/database/functions/Firebase/db_repository.dart';
 import 'package:trivo/screens/admin/screens/admin_editplaces.dart';
 import 'package:trivo/screens/admin/screens/admin_map_try.dart';
-import 'package:trivo/widgets/w_bottomnavbar.dart';
+import 'package:trivo/widgets/w_bottom_navbar.dart';
 import 'package:trivo/widgets/w_signout.dart';
 
 bool isListEmpty = true;
@@ -44,6 +44,7 @@ class _AdminhomeState extends State<Adminhome> {
               },
               icon: const Icon(Icons.map)),
           TextButton(
+            
             onPressed: () {
               showDialog(
                   context: context,
@@ -64,7 +65,7 @@ class _AdminhomeState extends State<Adminhome> {
             },
             child: const Text(
               'Login',
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
             ),
           ),
           const SizedBox(

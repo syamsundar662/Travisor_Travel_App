@@ -4,7 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:trivo/screens/admin/screens/admin_homepage.dart';
 import 'package:trivo/screens/screen_login.dart';
-import 'package:trivo/widgets/w_bottomnavbar.dart';
+import 'package:trivo/widgets/w_bottom_navbar.dart';
 
 class F_authentication {
   Future<void> signInWithEmailAndPassword(
@@ -33,6 +33,7 @@ class F_authentication {
           backgroundColor: Colors.red,
         ));
       }
+      
     }
   }
 
@@ -62,7 +63,7 @@ class F_authentication {
           context, MaterialPageRoute(builder: (Context) => const LoginPage()));
       saveUser(email, password, snap.user!.uid);
     } catch (e) {
-      if (e is FirebaseAuthException) {
+      if (e is FirebaseAuthException) {  
         if (e.code == 'email-already-in-use') {
           ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
               duration: Duration(seconds: 1),

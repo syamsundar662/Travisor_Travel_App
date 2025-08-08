@@ -24,6 +24,7 @@ class FavoritesState extends State<Favorites> {
     super.initState();
     fav.favoritesListenable;
   }
+  
 
   loadFavorites() async {
     final favoriteModel = Provider.of<FavoriteModel>(context, listen: false);
@@ -200,3 +201,4 @@ class FavoritesState extends State<Favorites> {
     );
   }
 }
+
